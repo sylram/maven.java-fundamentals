@@ -34,7 +34,9 @@
 4. Upon completion, open and run the `TestSuite` class to ensure that all tests have 100% success.
     * `TestSuite` is located in `src.main.java.com.github.perscholas.java_fundamentals`
 
-<img src="./VIEWME.gif">    
+[![./VIEWME-ide.gif]](./VIEWME-ide.gif)
+
+[![./VIEWME-cli.gif]](./VIEWME.gif)    
 
 
 ## Predicate Utilities

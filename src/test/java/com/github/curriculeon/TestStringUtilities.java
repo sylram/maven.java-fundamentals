@@ -174,11 +174,11 @@ public class TestStringUtilities {
     }
 
     @Test
-    public void getTheMiddleCharOfZipcode(){
+    public void getTheMiddleCharOfLeon(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Zipcode";
-        Character expected = 'c';
+        String input = "leon";
+        Character expected = 'o';
 
         // : When
         Character actual = stringUtilities.getMiddleCharacter(input);
@@ -189,11 +189,11 @@ public class TestStringUtilities {
 
 
     @Test
-    public void getTheMiddleCharOfZipcoder(){
+    public void getTheMiddleCharOfLeo(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Zipcoder";
-        Character expected = 'c';
+        String input = "leon";
+        Character expected = 'e';
 
         // : When
         Character actual = stringUtilities.getMiddleCharacter(input);

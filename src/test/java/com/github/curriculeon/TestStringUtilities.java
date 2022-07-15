@@ -204,11 +204,11 @@ public class TestStringUtilities {
 
 
     @Test
-    public void getTheFirstWord(){
+    public void getTheFirstWord1(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Zipcode Wilmington";
-        String expected = "Zipcode";
+        String input = "Curriculeon Curriculum";
+        String expected = "Curriculeon";
 
         // : When
         String actual = stringUtilities.getFirstWord(input);
@@ -219,11 +219,41 @@ public class TestStringUtilities {
 
 
     @Test
-    public void getTheSecondWord(){
+    public void getTheFirstWord2(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Zipcode Wilmington";
-        String expected = "Wilmington";
+        String input = "Leon Hunter";
+        String expected = "Leon";
+
+        // : When
+        String actual = stringUtilities.getFirstWord(input);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void getTheSecondWord1(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String input = "Curriculeon Curriculum";
+        String expected = "Curriculum";
+
+        // : When
+        String actual = stringUtilities.getSecondWord(input);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void getTheSecondWord2(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String input = "Leon Hunter";
+        String expected = "Hunter";
 
         // : When
         String actual = stringUtilities.getSecondWord(input);
@@ -233,11 +263,27 @@ public class TestStringUtilities {
     }
 
     @Test
+    public void reverse1(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String input = "Curriculeon";
+        String expected = "noelucirruC";
+
+
+        // : When
+        String actual = stringUtilities.reverse(input);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
     public void reverseThem(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Zipcode Wilmington";
-        String expected = "notgnimliW edocpiZ";
+        String input = "Leon Hunter";
+        String expected = "retnuH noeL";
 
 
         // : When

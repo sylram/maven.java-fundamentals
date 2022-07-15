@@ -57,7 +57,7 @@ public class TestStringUtilities {
     }
 
     @Test
-    public void substringBeginTest(){
+    public void substringBeginTest1(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
         String input = "Hello";
@@ -70,26 +70,56 @@ public class TestStringUtilities {
         assertEquals(expected, actual);
     }
 
+
     @Test
-    public void substringEndTest(){
+    public void substringBeginTest2(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String input = "Hello";
-        String expected = "llo";
+        String input = "Quicker";
+        String expected = "ker";
 
         // : When
-        String actual = stringUtilities.getSuffix("Hello");
+        String actual = stringUtilities.getPrefix(input);
 
         // : Then
         assertEquals(expected, actual);
     }
 
     @Test
-    public void testCompareToEquals(){
+    public void substringEndTest1(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String inputValue = "Zipcode";
-        String comparableValue = "Zipcode";
+        String input = "Hello";
+        String expected = "llo";
+
+        // : When
+        String actual = stringUtilities.getSuffix(input);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void substringEndTest2(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String input = "Quicker";
+        String expected = "ker";
+
+        // : When
+        String actual = stringUtilities.getSuffix(input);
+
+        // : Then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCompareToEquals1(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String inputValue = "curriculeon";
+        String comparableValue = "curriculeon";
 
         // : When
         boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);
@@ -100,11 +130,41 @@ public class TestStringUtilities {
 
 
     @Test
-    public void testCompareToNotEquals(){
+    public void testCompareToEquals2(){
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
-        String inputValue = "Zipcode";
-        String comparableValue = "Zipcodee";
+        String inputValue = "leon";
+        String comparableValue = "leon";
+
+        // : When
+        boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);
+
+        // : Then
+        assertTrue(actual);
+    }
+
+
+    @Test
+    public void testCompareToNotEquals1(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String inputValue = "curriculeon";
+        String comparableValue = "curriculeo";
+
+        // : When
+        boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);
+
+        // : Then
+        assertFalse(actual);
+    }
+
+
+    @Test
+    public void testCompareToNotEquals2(){
+        // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
+        String inputValue = "leon";
+        String comparableValue = "leo";
 
         // : When
         boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);

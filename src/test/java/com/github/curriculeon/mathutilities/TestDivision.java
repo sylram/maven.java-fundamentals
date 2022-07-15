@@ -19,7 +19,7 @@ public class TestDivision {
         int divisor = 2;
         int expectedInt = 10;
         // : When
-        int actualInt = mathUtils.divide(dividend, divisor);
+        int actualInt = mathUtils.divideIntegers(dividend, divisor);
         // : Then
         assertEquals(expectedInt, actualInt);
     }
@@ -31,7 +31,7 @@ public class TestDivision {
         long divisor = 1000L;
         long expectedLong = 20000;
         // : When
-        long actualLong = mathUtils.divide(dividend, divisor);
+        long actualLong = mathUtils.divideLongs(dividend, divisor);
         // : Then
         assertEquals(expectedLong, actualLong);
     }
@@ -43,7 +43,7 @@ public class TestDivision {
         short divisor = 1;
         short expectedShort = 2;
         // : When
-        short actualShort = mathUtils.divide(dividend, divisor);
+        short actualShort = mathUtils.divideShorts(dividend, divisor);
         // : Then
         assertEquals(expectedShort, actualShort);
 
@@ -56,7 +56,7 @@ public class TestDivision {
         byte divisor = 32;
         byte expectedByte = 2;
         // : When
-        byte actualByte = mathUtils.divide(dividend, divisor);
+        byte actualByte = mathUtils.divideBytes(dividend, divisor);
         // : Then
         assertEquals(expectedByte, actualByte);
     }
@@ -68,7 +68,7 @@ public class TestDivision {
         float divisor = 3;
         float expectedFloat = 2.50F;
         // : When
-        float actualFloat = mathUtils.divide(dividend, divisor);
+        float actualFloat = mathUtils.divideFloats(dividend, divisor);
         // : Then
         assertEquals(expectedFloat, actualFloat, 0);
     }
@@ -80,7 +80,7 @@ public class TestDivision {
         double divisor = 4.0;
         double expectedDouble = 1.25;
         // : When
-        double actualDouble = mathUtils.divide(dividend, divisor);
+        double actualDouble = mathUtils.divideDoubles(dividend, divisor);
         // : Then
         assertEquals(expectedDouble, actualDouble, 0);
     }

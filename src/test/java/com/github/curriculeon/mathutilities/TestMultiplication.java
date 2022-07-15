@@ -20,7 +20,7 @@ public class TestMultiplication {
         int multiplier = 2;
         int expectedInt = 10;
         // : When
-        int actualInt = mathUtils.multiply(multiplicand,multiplier);
+        int actualInt = mathUtils.multiplyIntegers(multiplicand,multiplier);
         // : Then
         assertEquals(expectedInt,actualInt);
     }
@@ -31,7 +31,7 @@ public class TestMultiplication {
         long multiplier = 1000;
         long expectedLong = 20000;
         // : When
-        long actualLong = mathUtils.multiply(multiplicand, multiplier);
+        long actualLong = mathUtils.multiplyLongs(multiplicand, multiplier);
         // : Then
         assertEquals(expectedLong, actualLong);
     }
@@ -42,7 +42,7 @@ public class TestMultiplication {
         short multiplier = 1;
         short expectedShort = 2;
         // : When
-        short actualShort = mathUtils.multiply(multiplicand, multiplier);
+        short actualShort = mathUtils.multiplyShorts(multiplicand, multiplier);
         // : Then
         assertEquals(expectedShort, actualShort);
     }
@@ -53,7 +53,7 @@ public class TestMultiplication {
         byte multiplier = 14;
         byte expectedByte = -32;
         // : When
-        byte actualByte = mathUtils.multiply(multiplicand, multiplier);
+        byte actualByte = mathUtils.multiplyBytes(multiplicand, multiplier);
         // : Then
         assertEquals(expectedByte, actualByte);
     }
@@ -64,7 +64,7 @@ public class TestMultiplication {
         float multiplier = 1;
         float expectedFloat = 2.50F;
         // : When
-        float actualFloat =  mathUtils.multiply(multiplicand,multiplier);
+        float actualFloat =  mathUtils.multiplyFloats(multiplicand,multiplier);
         // : Then
         assertEquals(expectedFloat, actualFloat, 0);
     }
@@ -75,7 +75,7 @@ public class TestMultiplication {
         double multiplier = 3.0;
         double expectedDouble = 9.75;
         // : When
-        double actualDouble = mathUtils.multiply(multiplicand,multiplier);
+        double actualDouble = mathUtils.multiplyDoubles(multiplicand,multiplier);
         // : Then
         assertEquals(expectedDouble, actualDouble, 0);
     }

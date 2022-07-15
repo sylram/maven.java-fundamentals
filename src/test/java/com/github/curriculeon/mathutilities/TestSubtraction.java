@@ -19,7 +19,7 @@ public class TestSubtraction {
         int difference = 7;
         int expectedInt = 13;
         // : When
-        int actualInt = mathUtils.subtract(baseValue,difference);
+        int actualInt = mathUtils.subtractDoubles(baseValue,difference);
         // : Then
         assertEquals(expectedInt,actualInt);
     }
@@ -30,7 +30,7 @@ public class TestSubtraction {
         long difference = 228437265;
         long expectedLong = 1;
         // : When
-        long actualLong = mathUtils.subtract(baseValue, difference);
+        long actualLong = mathUtils.subtractLongs(baseValue, difference);
         // : Then
         assertEquals(expectedLong,actualLong);
     }
@@ -41,7 +41,7 @@ public class TestSubtraction {
         short difference = 16383;
         short expectedShort = 1;
         // : When
-        short actualShort = mathUtils.subtract(baseValue, difference);
+        short actualShort = mathUtils.subtractShorts(baseValue, difference);
         // : Then
         assertEquals(expectedShort,actualShort);
     }
@@ -52,7 +52,7 @@ public class TestSubtraction {
         byte difference = 64;
         byte expectedByte = -1;
         // : When
-        byte actualByte = mathUtils.subtract(baseValue, difference);
+        byte actualByte = mathUtils.subtractBytes(baseValue, difference);
         // : Then
         assertEquals(expectedByte,actualByte);
     }
@@ -63,7 +63,7 @@ public class TestSubtraction {
         float difference = 795.0F;
         float expectedFloat = -44.415F;
         // : When
-        float actualFloat = mathUtils.subtract(baseValue,difference);
+        float actualFloat = mathUtils.subtractFloats(baseValue,difference);
         // : Then
         assertEquals(expectedFloat,actualFloat, 0.005);
     }
@@ -74,7 +74,7 @@ public class TestSubtraction {
         double difference = 231;
         double expectedDouble = -5.75;
         // : When
-        double actualDouble = mathUtils.subtract(baseValue, difference);
+        double actualDouble = mathUtils.subtractDoubles(baseValue, difference);
         // : Then
         assertEquals(expectedDouble,actualDouble, 0);
     }

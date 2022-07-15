@@ -8,13 +8,15 @@ import static org.junit.Assert.*;
  * Created by Leon Hunter on 6/14/17.
  */
 public class TestStringUtilities {
+    private StringUtilities stringUtilities = new StringUtilities();
     @Test
     public void getHelloWorldTest() {
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String expected = "Hello World";
 
         // : When
-        String actual = StringUtilities.getHelloWorld();
+        String actual = stringUtilities.getHelloWorld();
 
         // : Then
         assertEquals(expected, actual);
@@ -24,12 +26,13 @@ public class TestStringUtilities {
     @Test
     public void concatenationStringTest(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String one = "Hello";
         String two = " Java";
         String expected = "Hello Java";
 
         // : When
-        String actual = StringUtilities.concatenation(one,two);
+        String actual = stringUtilities.concatenation(one,two);
 
 
         // : Then
@@ -40,12 +43,13 @@ public class TestStringUtilities {
     @Test
     public void concatenationStringAndIntegerTest(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         int one = 1;
         String two = " Java";
         String expected = "1 Java";
 
         // : When
-        String actual = StringUtilities.concatenation(one,two);
+        String actual = stringUtilities.concatenation(one,two);
 
 
         // : Then
@@ -55,11 +59,12 @@ public class TestStringUtilities {
     @Test
     public void substringBeginTest(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Hello";
         String expected = "Hel";
 
         // : When
-        String actual = StringUtilities.getPrefix(input);
+        String actual = stringUtilities.getPrefix(input);
 
         // : Then
         assertEquals(expected, actual);
@@ -68,11 +73,12 @@ public class TestStringUtilities {
     @Test
     public void substringEndTest(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Hello";
         String expected = "llo";
 
         // : When
-        String actual = StringUtilities.getSuffix("Hello");
+        String actual = stringUtilities.getSuffix("Hello");
 
         // : Then
         assertEquals(expected, actual);
@@ -81,11 +87,12 @@ public class TestStringUtilities {
     @Test
     public void testCompareToEquals(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String inputValue = "Zipcode";
         String comparableValue = "Zipcode";
 
         // : When
-        boolean actual = StringUtilities.compareTwoStrings(inputValue, comparableValue);
+        boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);
 
         // : Then
         assertTrue(actual);
@@ -95,11 +102,12 @@ public class TestStringUtilities {
     @Test
     public void testCompareToNotEquals(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String inputValue = "Zipcode";
         String comparableValue = "Zipcodee";
 
         // : When
-        boolean actual = StringUtilities.compareTwoStrings(inputValue, comparableValue);
+        boolean actual = stringUtilities.compareTwoStrings(inputValue, comparableValue);
 
         // : Then
         assertFalse(actual);
@@ -108,11 +116,12 @@ public class TestStringUtilities {
     @Test
     public void getTheMiddleCharOfZipcode(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Zipcode";
         Character expected = 'c';
 
         // : When
-        Character actual = StringUtilities.getMiddleCharacter(input);
+        Character actual = stringUtilities.getMiddleCharacter(input);
 
         // : Then
         Assert.assertEquals(expected.toString(), actual.toString());
@@ -122,11 +131,12 @@ public class TestStringUtilities {
     @Test
     public void getTheMiddleCharOfZipcoder(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Zipcoder";
         Character expected = 'c';
 
         // : When
-        Character actual = StringUtilities.getMiddleCharacter(input);
+        Character actual = stringUtilities.getMiddleCharacter(input);
 
         // : Then
         Assert.assertEquals(expected.toString(), actual.toString());
@@ -136,11 +146,12 @@ public class TestStringUtilities {
     @Test
     public void getTheFirstWord(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Zipcode Wilmington";
         String expected = "Zipcode";
 
         // : When
-        String actual = StringUtilities.getFirstWord(input);
+        String actual = stringUtilities.getFirstWord(input);
 
         // : Then
         assertEquals(expected, actual);
@@ -150,11 +161,12 @@ public class TestStringUtilities {
     @Test
     public void getTheSecondWord(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Zipcode Wilmington";
         String expected = "Wilmington";
 
         // : When
-        String actual = StringUtilities.getSecondWord(input);
+        String actual = stringUtilities.getSecondWord(input);
 
         // : Then
         assertEquals(expected, actual);
@@ -163,12 +175,13 @@ public class TestStringUtilities {
     @Test
     public void reverseThem(){
         // : Given
+        final StringUtilities stringUtilities = new StringUtilities();
         String input = "Zipcode Wilmington";
         String expected = "notgnimliW edocpiZ";
 
 
         // : When
-        String actual = StringUtilities.reverse(input);
+        String actual = stringUtilities.reverse(input);
 
         // : Then
         assertEquals(expected, actual);

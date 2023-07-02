@@ -76,7 +76,7 @@ public class TestStringUtilities {
         // : Given
         final StringUtilities stringUtilities = new StringUtilities();
         String input = "Quicker";
-        String expected = "ker";
+        String expected = "Qui";
 
         // : When
         String actual = stringUtilities.getPrefix(input);
